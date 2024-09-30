@@ -1,0 +1,6 @@
+**/Obj
+**/obj
+**/build
+*.[oa]
+*.zip
+

@@ -1,6 +1,6 @@
-HDR_DIR = header /home/biqbin/mosek/8/tools/platform/linux64x86/h
+HDR_DIR = header /tmp/mosek/8/tools/platform/linux64x86/h
 HEADER = $(addprefix -I,$(HDR_DIR))
-LIB_DIR = /home/biqbin/mosek/8/tools/platform/linux64x86/bin
+LIB_DIR = /tmp/mosek/8/tools/platform/linux64x86/bin
 LIB = $(addprefix -L, $(LIB_DIR))
 LIB_NAMES = fusion64 mosek64
 LIBRARY = $(addprefix -l,$(LIB_NAMES))
@@ -59,5 +59,5 @@ $(OBJ_DIR)/UpperBoundComputation.o: $(SRC_DIR)/UpperBoundComputation.cpp
 
 
 clean: 
-	rm $(OBJ_DIR)/*.o
-	rm $(BUILD_DIR)/*.out
+	rm -f $(OBJ_DIR)/*.o
+	rm -f $(BUILD_DIR)/*.out

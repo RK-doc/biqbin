@@ -163,7 +163,14 @@ void read_input(char** argv, int& n, int& m, std::vector<Vertex>& vertices, std:
 			exit(EXIT_FAILURE);
 		}
 
-		//check input		if(v1 < 1 || v1 > n){			std::cout << "Problems reading input file (edge " << i+1 << ": vertex1 has to be between 1 and " << n << ")" << std::endl;			exit(EXIT_FAILURE);		}		if(v2 < 1 || v2 > n){			std::cout << "Problems reading input file (edge " << i+1 << ": vertex2 has to be between 1 and " << n << ")" << std::endl;			exit(EXIT_FAILURE);		}
+		//check input
+		if(v1 < 1 || v1 > n){
+			std::cout << "Problems reading input file (edge " << i+1 << ": vertex1 has to be between 1 and " << n << ")" << std::endl;
+			exit(EXIT_FAILURE);
+		}
+		if(v2 < 1 || v2 > n){
+			std::cout << "Problems reading input file (edge " << i+1 << ": vertex2 has to be between 1 and " << n << ")" << std::endl;
+			exit(EXIT_FAILURE);		}
 
 		//fscanf(file, "%d",&v1);
 		//fscanf(file, "%d",&v2);
@@ -434,6 +441,8 @@ int main(int argc, char **argv)
 	// rank of each process
 	int rank;
 
+	std::cout << "A " << rank << std::endl;
+
 	MPI_Init(NULL,NULL);
 	MPI_Comm_size(MPI_COMM_WORLD, &numbWorkers);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -457,6 +466,10 @@ int main(int argc, char **argv)
 	//double eps = std::numeric_limits<double>::epsilon();
 	double eps = OPTEPS; //defined in makefile
 	
+
+	//exit(1);
+
+
 	//read params
 	read_params();
 
@@ -471,11 +484,19 @@ int main(int argc, char **argv)
 	Subproblem p;
 	
 
+	//exit(1);
+
 	if (rank == 0)
 	{
 		//only master reads the file and sends info to slaves
 		//read input
+		
+		// exit(1);
+
 		read_input(argv, m_n, m_m, m_vertices, m_edges);
+
+		// exit(1);
+
 
 		// extract vectors
 
@@ -875,6 +896,9 @@ int main(int argc, char **argv)
 
 	else
 	{
+
+		// exit(2);
+
 		int over; // tag for FINISH
 		int active;
 /*
@@ -912,6 +936,9 @@ int main(int argc, char **argv)
 
 		MPI_Recv(&m_n, 1, MPI_INT, 0, 1, MPI_COMM_WORLD, &status);
 		MPI_Recv(&m_m, 1, MPI_INT, 0, 2, MPI_COMM_WORLD, &status);
+
+		exit(2);
+
 
 		// resize
 		vertices_numbers.resize(m_n);

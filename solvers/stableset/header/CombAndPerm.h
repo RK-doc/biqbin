@@ -30,6 +30,7 @@
 
 #include <iterator>
 #include <algorithm>
+#include <limits>  
 
 namespace detail
 {

@@ -7,6 +7,7 @@
 
 #include "BoundComputationBundle.h"
 #include <math.h>       /* exp */
+#include <random>
 
 using namespace mosek::fusion;
 using namespace monty;

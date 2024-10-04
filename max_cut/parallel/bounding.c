@@ -216,13 +216,6 @@ double SDPbound(BabNode *node, Problem *SP, Problem *PP, int rank) {
         if (count == params.max_outer_iter + params.extra_iter)
             giveup = 1; 
 
-        /* increase number of pentagonal and heptagonal inequalities (during separation)
-         * if the gap is still too big 
-         */
-        if ((rank != 0) && giveup && !prune) {
-            params.Pent_Trials += 60;    // add 3 types * 60 = 180 pentagonal inequalities
-            params.Hepta_Trials += 50;  // add 4 types * 50 = 200 heptagonal inequalities
-        }
 
         // purge inactive cutting planes, add new inequalities
         if (!prune && !giveup) {

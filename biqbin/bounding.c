@@ -222,12 +222,6 @@ double SDPbound(BabNode *node, Problem *SP, Problem *PP, int rank) {
         if ((rank != 0) && giveup && !prune) {
             params.Pent_Trials += 60;    // add 3 types * 60 = 180 pentagonal inequalities
             params.Hepta_Trials += 50;  // add 4 types * 50 = 200 heptagonal inequalities
-
-			if (params.Pent_Trials >= 1600)
-				params.Pent_Trials = 1600;
-
-			if (params.Hepta_Trials >= 1200)
-				params.Hepta_Trials = 1200;		
         }
 
         // purge inactive cutting planes, add new inequalities

@@ -1,4 +1,4 @@
-function [val,upp,feas] = matlab2graphMIN(A,b,c,F,filename,ID)
+function [val,upp,feas] = matlab2graphMIN(A,b,c,F,filename)
 
 % Given the parameters of the problem with all entries integer, it 
 % creates graph with integer weights. It outputs the value and 
@@ -111,7 +111,7 @@ low = floor(lb); upp = ceil(ub);            % integer bounds
 L = OBJt + pen*CONt;                        % Q in Lasserre paper                   
 val = sum(sum(L));                          % offset
 BM = L - diag(diag(L)); 
-get_grph(4*BM,filename,ID);  % create graph, 4 makes integer
+get_grph(4*BM,filename);  % create graph, 4 makes integer
 %fid = fopen('val.txt','w');	fprintf(fid,'%.2f',val);	fclose(fid); % save offset
 time = toc;
 end

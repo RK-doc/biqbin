@@ -1,4 +1,4 @@
-function prepare_MC(rpath,filename,ID)
+function prepare_MC(rpath,filename)
 % MATLAB function for transformation phase of BiqBin, i.e.
 %
 % min x'Fx + c'x  s.t.  Ax = b,  x in {0,1}^n
@@ -10,7 +10,7 @@ instance = sprintf('%s%s',rpath,filename);
 [A,b,c,F] = biqbin2matlab(instance);
 
 % b) compute penalty parameter and obtain max-cut instance
-[val,upp,feas] = matlab2graphMIN(A,b,c,F,filename,ID);
+[val,upp,feas] = matlab2graphMIN(A,b,c,F,filename);
 
 % c) save val (offset), upp (upper bound to check infeasibility of original
 % problem as val - maxcut > upp) and feas \in {-1,0,1} (1 feasible, -1
@@ -18,8 +18,7 @@ instance = sprintf('%s%s',rpath,filename);
 % val - maxcut > upp for infeasibility
 
 % save offset
-datoteka = sprintf('./data/%s.data.txt', ID);
-fid = fopen(datoteka,'w');
+fid = fopen('./data/data.txt','w');
 fprintf(fid,'feasible\n%d\n',feas);
 fprintf(fid,'offset\n%f\n',val);
 fprintf(fid,'upp\n%f\n',upp);

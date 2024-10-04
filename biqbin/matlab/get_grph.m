@@ -1,4 +1,4 @@
-function [e,w] = get_grph(A,filename,ID)
+function [e,w] = get_grph(A,filename)
 % Given the (sym) matrix A it outputs
 % the weighted  graph with edges e and weights w.
 % if A(i,j) = 0, then no edge is generated
@@ -22,7 +22,7 @@ end; end;
 
 A = [e , w];
 
-instance = sprintf('./data/%s.%s',ID,filename);
+instance = sprintf('./data/%s',filename);
 fileID = fopen(instance,'wt');
 fprintf(fileID,'%d %d\n',n,m);
 fprintf(fileID,'%d %d %.f \n',A'); % do I need more decimals %.6f?

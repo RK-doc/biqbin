@@ -41,9 +41,9 @@ int processCommandLineArguments(int argc, char **argv, int rank) {
 
     int read_error = 0;
 
-    if (argc != 7) {
+    if (argc != 6) {
         if (rank == 0)
-            fprintf(stderr, "Usage: mpirun -n processes ./biqbin graph_instance params ID time_start_info time_temp_info temp_or_not\n");
+            fprintf(stderr, "Usage: mpirun -n processes ./biqbin graph_instance params ID time_start_info time_temp_info\n");
         read_error = 1;
         return read_error;
     }
@@ -54,11 +54,8 @@ int processCommandLineArguments(int argc, char **argv, int rank) {
     if (rank == 0) {
 
         // Create the output file
-        char output_path[500];
-		if (argv[6])
-        	sprintf(output_path, "%s.output.tmp", argv[3]);
-		else
-			sprintf(output_path, "%s.output", argv[3]);
+        char output_path[200];
+        sprintf(output_path, "%s_%s.output", argv[1], argv[3]);
 
         output = fopen(output_path, "w");
         if (!output) {

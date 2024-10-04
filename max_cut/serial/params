@@ -1,0 +1,15 @@
+init_bundle_iter  = 5
+max_bundle_iter   = 20
+min_outer_iter 	  = 10
+max_outer_iter 	  = 30
+violated_Ineq     = 0.05
+TriIneq 	  = 500
+Pent_Trials 	  = 160
+Hepta_Trials 	  = 120
+include_Pent 	  = 1
+include_Hepta 	  = 1
+root 	 	  = 0
+use_diff 	  = 1
+time_limit 	  = 0
+branchingStrategy = 0
+detailedOutput 	  = 1

@@ -16,5 +16,5 @@ include_Pent 	  	= 1
 include_Hepta 	  	= 1
 root 	 	  		= 0
 use_diff 	  		= 1
-time_limit 	  		= 180000
+time_limit 	  		= 10
 branchingStrategy 	= 1

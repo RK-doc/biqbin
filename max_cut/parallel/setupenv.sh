@@ -1,4 +1,3 @@
-unset LD_PRELOAD
 module load OpenBLAS 
 module load OpenMPI
 export OPENBLAS_NUM_THREADS=1

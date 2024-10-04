@@ -12,9 +12,6 @@ extern Problem *SP;
 extern Problem *PP;            
 extern int BabPbSize;
 
-int num_vertices = 0;
-int num_edges = 0;
-
 // macro to handle the errors in the input reading
 #define READING_ERROR(file,cond,message)\
         if ((cond)) {\
@@ -41,9 +38,9 @@ int processCommandLineArguments(int argc, char **argv, int rank) {
 
     int read_error = 0;
 
-    if (argc != 6) {
+    if (argc != 3) {
         if (rank == 0)
-            fprintf(stderr, "Usage: mpirun -n processes ./biqbin graph_instance params ID time_start_info time_temp_info\n");
+            fprintf(stderr, "Usage: ./biqbin file.rudy file.params\n");
         read_error = 1;
         return read_error;
     }
@@ -54,8 +51,15 @@ int processCommandLineArguments(int argc, char **argv, int rank) {
     if (rank == 0) {
 
         // Create the output file
-        char output_path[500];
-        sprintf(output_path, "%s.output", argv[3]);
+        char output_path[200];
+        sprintf(output_path, "%s.output", argv[1]);
+
+        // Check if the file already exists, if so aappend _<NUMBER> to the end of the output file name
+        struct stat buffer;
+        int counter = 1;
+        
+        while (stat(output_path, &buffer) == 0)
+            sprintf(output_path, "%s.output_%d", argv[1], counter++);
 
         output = fopen(output_path, "w");
         if (!output) {
@@ -118,6 +122,16 @@ int processCommandLineArguments(int argc, char **argv, int rank) {
     if (params.adjust_TriIneq)
         params.TriIneq = SP->n * 10;
 
+
+    if (rank == 0) {
+        // print parameters to output file
+        fprintf(output, "BiqBin parameters:\n");
+#define P(type, name, format, def_value)\
+            fprintf(output, "%20s = "format"\n", #name, params.name);
+        PARAM_FIELDS
+#undef P
+    }
+
     return read_error;
 }
 
@@ -174,10 +188,19 @@ int readData(const char *instance) {
         fprintf(stderr, "Error: problem opening input file %s\n", instance);
         return 1;
     }
+    printf("Input file: %s\n", instance);	
+    fprintf(output,"Input file: %s\n", instance);
+
+    int num_vertices;
+    int num_edges;
 
     READING_ERROR(f, fscanf(f, "%d %d \n", &num_vertices, &num_edges) != 2,
                   "Problem reading number of vertices and edges");
     READING_ERROR(f, num_vertices <= 0, "Number of vertices has to be positive");
+
+    // OUTPUT information on instance
+    fprintf(stdout, "\nGraph has %d vertices and %d edges.\n", num_vertices, num_edges);
+    fprintf(output, "\nGraph has %d vertices and %d edges.\n", num_vertices, num_edges);
 
     // read edges and store them in matrix Adj
     // NOTE: last node is fixed to 0

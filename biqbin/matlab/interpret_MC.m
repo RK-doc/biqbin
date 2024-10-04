@@ -1,10 +1,9 @@
-function interpret_MC(rpath,ID)
-% rpath = path to the folder containing ID
-% ID.output.tmp = output of max-cut solver in JSON format
+function interpret_MC(rpath,filename)
+% rpath = path to the folder containing filename
+% filename = output of max-cut solver in JSON format
 
 % read data.txt
-datoteka = sprintf('./data/%s.data.txt',ID);
-dataFile = fopen(datoteka);
+dataFile = fopen('./data/data.txt');
 fgetl(dataFile);
 feas = fscanf(dataFile,'%d');
 fgetl(dataFile);
@@ -14,13 +13,13 @@ upp = fscanf(dataFile,'%d');
 
 
 % change name of outputfile
-filename = sprintf('%s%s.output.tmp',rpath,ID);
+filename = sprintf('%s%s',rpath,filename);
 
 % read results from BiqBin maxcut solver in JSON file
 % and check (in)feasibility of original problem
 fid = fopen(filename);
 
-temp_sol = sprintf('%s%s.output',rpath, ID);
+temp_sol = sprintf('%s%s',rpath,'temp_sol');
 foutput = fopen(temp_sol,'w');
 
 % read lines and print them to foutput
@@ -51,7 +50,7 @@ end
 % read 6th line for optimum cut
 line = fgetl(fid);
 line = strtrim(line);
-ex = extractBetween(line,': "{  ', '}"');
+ex = extractBetween(line,': ( ', ' )');
 cut_index = str2num(cell2mat(ex));
 
 % read 13th line for number of original vertices + 1
@@ -83,11 +82,11 @@ for i = 1:length(cut_index)
 	cut(cut_index(i)) = 0;
 end
 
-fprintf(foutput, '\t\t\"Solution\": \"{ ');
+fprintf(foutput, '\t\t\"Solution\": \"[ ');
 for i = 1:n-1
 	fprintf(foutput, '%d ', cut(i));
 end
-fprintf(foutput, '}\",\n');
+fprintf(foutput, ']\",\n');
 
 % copy some more lines
 line = fgetl(fid);fprintf(foutput,line);fprintf(foutput,'\n');

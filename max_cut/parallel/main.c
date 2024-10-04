@@ -32,6 +32,9 @@ int main(int argc, char **argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &numbWorkers);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Status status;
+
+    if (rank == 0)
+	   printf("Number of cores: %d\n", numbWorkers);
 	
     /***** user defined MPI struct: for sending and receiving *****/
     // (1) for BabSolution
@@ -70,11 +73,6 @@ int main(int argc, char **argv) {
     BabNode *node;
     double g_lowerBound;
 
-	// time constants for temp output during the algorithm
-	int INFO_START = atoi(argv[4]);
-	int INFO_TEMP = atoi(argv[5]);
-	int add_limit = INFO_TEMP;
-
     /* each process allocates its local priority queue */
     heap = Init_Heap(HEAP_SIZE);
 
@@ -86,20 +84,24 @@ int main(int argc, char **argv) {
     if (read_error)
         goto FINISH;
 	
+	
+
     /******************** MASTER PROCESS ********************/
     if (rank == 0)
     {
 
         // only master evaluates the root node
         // and places it in priority queue if not able to prune
-        over = Init_PQ();   
+        over = Init_PQ();
 
-		// broadcast diff
-		if (params.use_diff)
-	    	MPI_Bcast(&diff, 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);	
+	printf("Initial lower bound: %.0lf\n", Bab_LBGet());    
+
+	// broadcast diff
+	if (params.use_diff)
+	    MPI_Bcast(&diff, 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);	
 
         // broadcast lower bound to others or -1 to exit
-		MPI_Bcast(&over, 1, MPI_INT, 0, MPI_COMM_WORLD);
+	MPI_Bcast(&over, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
         if ( (over == -1) || params.root) {          
             goto FINISH;
@@ -148,7 +150,7 @@ int main(int argc, char **argv) {
             --numbFreeWorkers;
 
             MPI_Send(&over, 1, MPI_INT, worker, OVER, MPI_COMM_WORLD);
-	    	MPI_Send(&g_lowerBound, 1, MPI_DOUBLE, worker, LOWER_BOUND, MPI_COMM_WORLD);
+	    MPI_Send(&g_lowerBound, 1, MPI_DOUBLE, worker, LOWER_BOUND, MPI_COMM_WORLD);
             MPI_Send(child_node, 1, BabNodetype, worker, PROBLEM, MPI_COMM_WORLD);
 
             free(child_node);
@@ -159,7 +161,6 @@ int main(int argc, char **argv) {
 
 	    num_workers_used = 2;
 
-		int print_init_info = 0;
 	
         /************* MAIN LOOP for master **************/
         do {
@@ -167,20 +168,6 @@ int main(int argc, char **argv) {
             /*** wait for messages: extract source from status ***/
             MPI_Recv(&message, 1, MPI_INT, MPI_ANY_SOURCE, MESSAGE, MPI_COMM_WORLD, &status);
             source = status.MPI_SOURCE;
-
-			// output initial info
-			if (!print_init_info) {
-				if ( MPI_Wtime() - TIME > INFO_START ) {
-					outputFile_AfterStart(argv, Bab_numEvalNodes());
-					print_init_info = 1;
-				}
-			}
-
-			// output info during execution of algorithm
-			if ( MPI_Wtime() - TIME > INFO_TEMP ) {
-				outputFile_AfterStart(argv, Bab_numEvalNodes());
-				INFO_TEMP += add_limit;
-			}
 
             master_Bab_Main(message, source, busyWorkers, numbWorkers, &numbFreeWorkers, BabSolutiontype);
 
@@ -257,17 +244,11 @@ int main(int argc, char **argv) {
 
     /* Print results to the standard output and to the output file */
     if (rank == 0) {
-		extern int stopped;
-
-	    if (!stopped) {
-        	printFinalOutput(stdout,Bab_numEvalNodes(),"Optimal");
-        	printFinalOutput(output,Bab_numEvalNodes(),"Optimal");
-	    }
-	 	else {
-			printFinalOutput(stdout,Bab_numEvalNodes(),"Approximate");
-        	printFinalOutput(output,Bab_numEvalNodes(),"Approximate");
-		}
-
+        printFinalOutput(stdout,Bab_numEvalNodes());
+        printFinalOutput(output,Bab_numEvalNodes());
+	fprintf(output, "Number of cores: %d\n", numbWorkers);
+	fprintf(output, "Maximum number of workers used: %d\n", num_workers_used);
+	printf("Maximum number of workers used: %d\n", num_workers_used);
         fclose(output);
     }
 

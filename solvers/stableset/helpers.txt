@@ -1,1 +1,0 @@
-docker run stableset:0.0.1 mpirun build/StableSetBab.out build/sparse_graph200_density10.txt~ log

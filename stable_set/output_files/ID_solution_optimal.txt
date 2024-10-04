@@ -1,0 +1,15 @@
+{
+	"ExecutionMD": {
+		"ExecutionTime": 0.334,
+		"SolutionType": "Optimal",
+		"Solution": 10,
+		"SolutionSet": (1, 2, 3, 12, 13, 15, 19, 20, 24, 25),
+		"babNodes": 17
+	},
+	"ObjectMD": {
+		"ObjectTypeString": "Graph",
+		"Vertices": 26,
+		"Edges": 39,
+		"Density": 0.12,
+	}
+}

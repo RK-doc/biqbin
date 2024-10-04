@@ -1,0 +1,6 @@
+feasible
+1
+offset
+26.000000
+upp
+26.000000

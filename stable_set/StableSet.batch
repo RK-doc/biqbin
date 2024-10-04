@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --export=ALL,LD_PRELOAD=
+#SBATCH --job-name STABLE_SET
+#SBATCH --partition=haswell --mem=0
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=24 ## maximum is 24
+
+source setupenv.sh
+
+srun StableSetBaB data/CubicVT26_5.dat ID 300 3600

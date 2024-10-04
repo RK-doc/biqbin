@@ -1,0 +1,4 @@
+
+this is the version for 64-bit machines (i.e., no long-int- arrays.)
+using this code on a 32-bit machines may cause troubles in the
+triangle-separation for medium sized instances.  

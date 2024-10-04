@@ -1,0 +1,57 @@
+Sender: LSF System <lsfadmin@cn74.hpc>
+Subject: Job 39884: <#!/bin/sh; #BSUB -a openmpi;#BSUB -q blade;#BSUB -n 48;#BSUB -oo myOutput.out;#BSUB -e myError.err;  mpirun bab testni\ grafi/mac/rudy/g05_60.0> in cluster <hpcfs> Done
+
+Job <#!/bin/sh; #BSUB -a openmpi;#BSUB -q blade;#BSUB -n 48;#BSUB -oo myOutput.out;#BSUB -e myError.err;  mpirun bab testni\ grafi/mac/rudy/g05_60.0> was submitted from host <prelog> by user <biqbin> in cluster <hpcfs>.
+Job was executed on host(s) <24*cn74>, in queue <blade>, as user <biqbin> in cluster <hpcfs>.
+                            <24*cn75>
+</home/biqbin> was used as the home directory.
+</home/biqbin/BiqBinFiles/Bin/BiqMac5/version_1> was used as the working directory.
+Started at Thu Mar 29 10:59:25 2018
+Results reported at Thu Mar 29 10:59:30 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -a openmpi
+#BSUB -q blade
+#BSUB -n 48
+#BSUB -oo myOutput.out
+#BSUB -e myError.err
+
+
+mpirun bab testni\ grafi/mac/rudy/g05_60.0
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               160.43 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+
+The output (if any) follows:
+
+graph: testni grafi/mac/rudy/g05_60.0
+The input graph has 60 nodes and 885 edges, edge weights are integers.
+
+BEST VALUE = 536.000000
+BEST CUT: -1 1 1 -1 1 1 -1 1 1 1 -1 1 -1 -1 1 1 -1 1 1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 1 1 -1 1 -1 -1 1 -1 -1 -1 1 1 1 1 -1 1 -1 -1 1 1 1 1 1 
+ONE SIDE OF THE CUT: 2 3 5 6 8 9 10 12 15 16 18 19 21 31 38 39 41 44 48 49 50 51 53 56 57 58 59 60 
+B&B nodes = 5
+maxQueueSize = 2
+maxWorkers = 2
+TIME: 4.00 sec
+
+
+
+
+PS:
+
+Read file <myError.err> for stderr output of this job.
+

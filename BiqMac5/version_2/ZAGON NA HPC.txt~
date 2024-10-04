@@ -1,0 +1,17 @@
+Najprej moraš naložiti openmpi in atlas:
+1) module load openmpi
+2) module load atlas
+
+Ustvarjanje bab datoteke in zagon na HPC:
+1) pojdi v mapo BiqMac
+2) vpiši ukaz: make (poženemo Makefile -> ustvarimo bab)
+3) za urejanje LSF kode vpišemo nano BiqMac2.lsf
+4) ukaz za pošiljanje HPC: bsub < BiqMac2.lsf
+5) z ukazom cat [ime output datoteke - glej BiqMac2.lsf] izpišemo v konzolo output
+
+Za raèunanje na boljšem vozlišèu (ne na Prelogu!):
+1) ukaz blade
+2) ukaz node
+
+Za raèunanje na veè vozlišèih (node), ker si sicer omejen na 12 procesov (oz. 24 pr blade):
+1) bsub -n stProcesov -eo error.test(ime error fila) -oo output.test(ime output fila) -R "span[ptile=12]" 'mpirun -np stProcesov ./bab(ime datoteke za izvedbo oz. veè imen!)

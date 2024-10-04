@@ -1,0 +1,15 @@
+{
+	"ExecutionMD": {
+		"ExecutionTime": 23.423,
+		"SolutionType": "Optimal",
+		"Solution": 1431.000000,
+		"OneSideOfTheCut": (3, 4, 8, 11, 12, 18, 19, 22, 23, 24, 27, 28, 29, 31, 32, 36, 38, 39, 43, 44, 46, 48, 49, 52, 53, 55, 56, 57, 58, 59, 60, 64, 66, 67, 68, 69, 70, 71, 75, 76, 79, 80, 83, 87, 89, 91, 92, 93, 94, 99, 100),
+		"babNodes": 621
+	},
+	"ObjectMD": {
+		"ObjectTypeString": "Graph",
+		"Vertices": 100,
+		"Edges": 2475,
+		"Density": 0.500
+	}
+}

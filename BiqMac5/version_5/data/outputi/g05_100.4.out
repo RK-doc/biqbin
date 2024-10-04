@@ -1,0 +1,408 @@
+Sender: LSF System <lsfadmin@cn21>
+Subject: Job 35650: <mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.4> in cluster <hpcfs> Done
+
+Job <mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.4> was submitted from host <cn54> by user <avegikalamar> in cluster <hpcfs>.
+Job was executed on host(s) <2*cn21>, in queue <normal>, as user <avegikalamar> in cluster <hpcfs>.
+</home/avegikalamar> was used as the home directory.
+</home/avegikalamar/BiqMac4> was used as the working directory.
+Started at Wed Aug 30 20:12:35 2017
+Results reported at Wed Aug 30 20:15:39 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.4
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               369.66 sec.
+    Max Memory :             50 MB
+    Average Memory :         44.62 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               1308 MB
+
+    Max Processes :          5
+    Max Threads :            14
+
+The output (if any) follows:
+
+The input graph has 100 nodes and 2475 edges, edge weights are integers.
+
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za novo vrednost 
+
+Zahtevek za otroke 
+bound_left = 50
+bound_right = 85
+velikost vrste = 0
+velikost vrste = 1
+velikost vrste = 2
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 20
+bound_right = 88
+velikost vrste = 1
+velikost vrste = 2
+velikost vrste = 3
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 10
+bound_right = 15
+velikost vrste = 2
+velikost vrste = 3
+velikost vrste = 4
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 36
+bound_right = 66
+velikost vrste = 3
+velikost vrste = 4
+velikost vrste = 5
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 12
+bound_right = 31
+velikost vrste = 4
+velikost vrste = 5
+velikost vrste = 6
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 23
+bound_right = 76
+velikost vrste = 5
+velikost vrste = 6
+velikost vrste = 7
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 32
+bound_right = 94
+velikost vrste = 6
+velikost vrste = 7
+velikost vrste = 8
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 91
+bound_right = 94
+velikost vrste = 7
+velikost vrste = 8
+velikost vrste = 9
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 45
+bound_right = 94
+velikost vrste = 8
+velikost vrste = 9
+velikost vrste = 10
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 3
+bound_right = 33
+velikost vrste = 9
+velikost vrste = 10
+velikost vrste = 11
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 78
+bound_right = 86
+velikost vrste = 9
+velikost vrste = 10
+velikost vrste = 11
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 8
+bound_right = 60
+velikost vrste = 10
+velikost vrste = 11
+velikost vrste = 12
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 56
+bound_right = 80
+velikost vrste = 11
+velikost vrste = 12
+velikost vrste = 13
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 27
+bound_right = 66
+velikost vrste = 12
+velikost vrste = 13
+velikost vrste = 14
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 44
+bound_right = 55
+velikost vrste = 12
+velikost vrste = 13
+velikost vrste = 14
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 63
+bound_right = 84
+velikost vrste = 13
+velikost vrste = 14
+velikost vrste = 15
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 4
+bound_right = 99
+velikost vrste = 14
+velikost vrste = 15
+velikost vrste = 16
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 68
+bound_right = 74
+velikost vrste = 12
+velikost vrste = 13
+velikost vrste = 14
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 0
+bound_right = 66
+velikost vrste = 13
+velikost vrste = 14
+velikost vrste = 15
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 36
+bound_right = 37
+velikost vrste = 12
+velikost vrste = 13
+velikost vrste = 14
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 35
+bound_right = 64
+velikost vrste = 13
+velikost vrste = 14
+velikost vrste = 15
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 25
+bound_right = 54
+velikost vrste = 14
+velikost vrste = 15
+velikost vrste = 16
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 1
+bound_right = 74
+velikost vrste = 2
+velikost vrste = 3
+velikost vrste = 4
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 92
+bound_right = 99
+velikost vrste = 2
+velikost vrste = 3
+velikost vrste = 4
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za otroke 
+bound_left = 9
+bound_right = 83
+velikost vrste = 1
+velikost vrste = 2
+velikost vrste = 3
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+
+Zahtevek za fathom 
+Fathom!!
+
+Zahtevek za posiljanje workerjem 
+NAJBOLJSA VREDNOST = 1440.000000
+NAJBOLJSI PREREZ = -1 1 1 1 -1 1 -1 1 1 -1 -1 1 1 -1 -1 1 1 -1 1 -1 -1 -1 -1 -1 1 1 1 1 1 -1 1 1 1 -1 1 1 1 -1 -1 1 -1 -1 1 1 1 1 -1 1 -1 1 1 -1 -1 -1 -1 -1 1 1 -1 1 1 -1 -1 -1 -1 1 -1 1 1 1 -1 1 1 -1 -1 1 -1 -1 1 -1 -1 1 -1 1 1 -1 -1 1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 1 -1 
+ENA STRAN PREREZA = 2 3 4 6 8 9 12 13 16 17 19 25 26 27 28 29 31 32 33 35 36 37 40 43 44 45 46 48 50 51 57 58 60 61 66 68 69 70 72 73 76 79 82 84 85 88 92 99 
+
+B&B vozlisc = 51
+Najvec zasedenih delavcev = 0
+Cas: 184.00 sec
+
+
+PS:
+
+Read file <g05_100.4.err> for stderr output of this job.
+

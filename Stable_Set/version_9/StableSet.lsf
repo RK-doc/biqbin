@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#BSUB -a openmpi
+#BSUB -q normal
+#BSUB -n 96
+#BSUB -oo output.out
+#BSUB -eo error.err
+export OMP_NUM_THREADS=2
+
+mpirun StableSetBaB data/brock200_1_clq.dat ID 2 10 

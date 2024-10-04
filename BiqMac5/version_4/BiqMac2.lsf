@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#BSUB -a openmpi
+#BSUB -q blade
+#BSUB -n 72
+#BSUB -oo output.out
+#BSUB -eo error.err
+export OMP_NUM_THREADS=2
+
+mpirun bab data/mac/rudy/g05_100.7 ID 300 3600	
+

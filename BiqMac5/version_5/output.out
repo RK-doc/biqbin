@@ -1,0 +1,62 @@
+Sender: LSF System <lsfadmin@cn79.hpc>
+Subject: Job 46545: <#!/bin/sh; #BSUB -a openmpi;#BSUB -q blade;#BSUB -n 72;#BSUB -oo output.out;#BSUB -eo error.err;export OMP_NUM_THREADS=2; mpirun bab data/mac/rudy/g05_100.7 ID 300 3600	> in cluster <hpcfs> Done
+
+Job <#!/bin/sh; #BSUB -a openmpi;#BSUB -q blade;#BSUB -n 72;#BSUB -oo output.out;#BSUB -eo error.err;export OMP_NUM_THREADS=2; mpirun bab data/mac/rudy/g05_100.7 ID 300 3600	> was submitted from host <cn54> by user <hrgat> in cluster <hpcfs>.
+Job was executed on host(s) <24*cn79>, in queue <blade>, as user <hrgat> in cluster <hpcfs>.
+                            <24*cn64>
+                            <24*cn65>
+</home/hrgat> was used as the home directory.
+</home/hrgat/Namizje/BiqBin_format/Parallel_MaxCut_solver> was used as the working directory.
+Started at Sun Feb 17 16:15:30 2019
+Results reported at Sun Feb 17 16:15:55 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -a openmpi
+#BSUB -q blade
+#BSUB -n 72
+#BSUB -oo output.out
+#BSUB -eo error.err
+export OMP_NUM_THREADS=2
+
+mpirun bab data/mac/rudy/g05_100.7 ID 300 3600	
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               2811.41 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+
+The output (if any) follows:
+
+{
+	"ExecutionMD": {
+		"ExecutionTime": 23.423,
+		"SolutionType": "Optimal",
+		"Solution": 1431.000000,
+		"OneSideOfTheCut": (3, 4, 8, 11, 12, 18, 19, 22, 23, 24, 27, 28, 29, 31, 32, 36, 38, 39, 43, 44, 46, 48, 49, 52, 53, 55, 56, 57, 58, 59, 60, 64, 66, 67, 68, 69, 70, 71, 75, 76, 79, 80, 83, 87, 89, 91, 92, 93, 94, 99, 100),
+		"babNodes": 621
+	},
+	"ObjectMD": {
+		"ObjectTypeString": "Graph",
+		"Vertices": 100,
+		"Edges": 2475,
+		"Density": 0.500
+	}
+}
+
+
+PS:
+
+Read file <error.err> for stderr output of this job.
+

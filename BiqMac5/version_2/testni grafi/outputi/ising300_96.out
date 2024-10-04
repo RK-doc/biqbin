@@ -1,0 +1,71 @@
+Sender: LSF System <lsfadmin@cn21>
+Subject: Job 35941: <mpirun -np 96 ./bab testni\ grafi/mac/ising/ising2.5-300_5555 testni\ grafi/mac/ising/ising2.5-300_6666 testni\ grafi/mac/ising/ising2.5-300_7777 testni\ grafi/mac/ising/ising3.0-300_5555 testni\ grafi/mac/ising/ising3.0-300_6666 testni\ grafi/mac/ising/ising3.0-300_7777> in cluster <hpcfs> Exited
+
+Job <mpirun -np 96 ./bab testni\ grafi/mac/ising/ising2.5-300_5555 testni\ grafi/mac/ising/ising2.5-300_6666 testni\ grafi/mac/ising/ising2.5-300_7777 testni\ grafi/mac/ising/ising3.0-300_5555 testni\ grafi/mac/ising/ising3.0-300_6666 testni\ grafi/mac/ising/ising3.0-300_7777> was submitted from host <prelog> by user <avegikalamar> in cluster <hpcfs>.
+Job was executed on host(s) <12*cn21>, in queue <normal>, as user <avegikalamar> in cluster <hpcfs>.
+                            <12*cn47>
+                            <12*cn48>
+                            <12*cn10>
+                            <12*cn18>
+                            <12*cn31>
+                            <12*cn32>
+                            <12*cn33>
+</home/avegikalamar> was used as the home directory.
+</home/avegikalamar/BiqMac5> was used as the working directory.
+Started at Thu Sep  7 13:39:08 2017
+Results reported at Fri Sep  8 13:08:51 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpirun -np 96 ./bab testni\ grafi/mac/ising/ising2.5-300_5555 testni\ grafi/mac/ising/ising2.5-300_6666 testni\ grafi/mac/ising/ising2.5-300_7777 testni\ grafi/mac/ising/ising3.0-300_5555 testni\ grafi/mac/ising/ising3.0-300_6666 testni\ grafi/mac/ising/ising3.0-300_7777
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: Killed.
+
+Resource usage summary:
+
+    CPU time :               212390.27 sec.
+    Max Memory :             815 MB
+    Average Memory :         813.06 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Processes :          91
+    Max Threads :            280
+
+The output (if any) follows:
+
+graph: testni grafi/mac/ising/ising2.5-300_5555
+The input graph has 300 nodes and 44850 edges, edge weights are integers.
+
+Time limit of 600 sec exceeded.
+best find value = 8579363.000000
+B&B nodes = 45
+maxQueueSize = 2
+maxWorkers = 22
+TIME: 603.00 sec
+
+
+graph: testni grafi/mac/ising/ising2.5-300_6666
+The input graph has 300 nodes and 44850 edges, edge weights are integers.
+
+Time limit of 600 sec exceeded.
+best find value = 0.000000
+B&B nodes = 1
+maxQueueSize = 1
+maxWorkers = 1
+TIME: 46.00 sec
+
+
+graph: testni grafi/mac/ising/ising2.5-300_7777
+The input graph has 300 nodes and 44850 edges, edge weights are integers.
+
+
+
+PS:
+
+Read file <ising300_96.err> for stderr output of this job.
+

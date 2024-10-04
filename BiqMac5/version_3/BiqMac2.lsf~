@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#BSUB -a openmpi
+#BSUB -q normal
+#BSUB -n 48
+#BSUB -oo myOutput.out
+#BSUB -e myError.err
+
+mpirun bab testni\ grafi/mac/rudy/g05_80.2

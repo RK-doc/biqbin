@@ -1,0 +1,49 @@
+Sender: LSF System <lsfadmin@cn58>
+Subject: Job 35647: <mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.1> in cluster <hpcfs> Done
+
+Job <mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.1> was submitted from host <cn54> by user <avegikalamar> in cluster <hpcfs>.
+Job was executed on host(s) <2*cn58>, in queue <normal>, as user <avegikalamar> in cluster <hpcfs>.
+</home/avegikalamar> was used as the home directory.
+</home/avegikalamar/BiqMac4> was used as the working directory.
+Started at Wed Aug 30 20:11:38 2017
+Results reported at Wed Aug 30 23:11:43 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.1
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               21634.34 sec.
+    Max Memory :             149 MB
+    Average Memory :         112.48 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               1407 MB
+
+    Max Processes :          5
+    Max Threads :            14
+
+The output (if any) follows:
+
+The input graph has 100 nodes and 2475 edges, edge weights are integers.
+
+Time limit of three hours exceeded.
+
+Summary of current status:
+Upper bound: 1428.05 
+
+B&B vozlisc = 6039
+Najvec zasedenih delavcev = 0
+Cas: 10804.00 sec
+
+
+PS:
+
+Read file <g05_100.1.err> for stderr output of this job.

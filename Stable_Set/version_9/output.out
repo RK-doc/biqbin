@@ -1,0 +1,66 @@
+Sender: LSF System <lsfadmin@cn53>
+Subject: Job 46953: <#!/bin/sh; #BSUB -a openmpi;#BSUB -q normal;#BSUB -n 96;#BSUB -oo output.out;#BSUB -eo error.err;export OMP_NUM_THREADS=2; mpirun StableSetBaB data/brock200_1_clq.dat ID 2 10 > in cluster <hpcfs> Done
+
+Job <#!/bin/sh; #BSUB -a openmpi;#BSUB -q normal;#BSUB -n 96;#BSUB -oo output.out;#BSUB -eo error.err;export OMP_NUM_THREADS=2; mpirun StableSetBaB data/brock200_1_clq.dat ID 2 10 > was submitted from host <cn18> by user <biqbin> in cluster <hpcfs>.
+Job was executed on host(s) <12*cn53>, in queue <normal>, as user <biqbin> in cluster <hpcfs>.
+                            <12*cn41>
+                            <12*cn43>
+                            <12*cn11>
+                            <12*cn17>
+                            <12*cn31>
+                            <12*cn32>
+                            <12*cn33>
+</home/biqbin> was used as the home directory.
+</home/biqbin/BiqBinFiles/Bin/Stable_Set/version_9> was used as the working directory.
+Started at Fri Feb 22 15:23:47 2019
+Results reported at Fri Feb 22 15:24:01 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+
+#BSUB -a openmpi
+#BSUB -q normal
+#BSUB -n 96
+#BSUB -oo output.out
+#BSUB -eo error.err
+export OMP_NUM_THREADS=2
+
+mpirun StableSetBaB data/brock200_1_clq.dat ID 2 10 
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               2023.34 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+
+The output (if any) follows:
+
+{
+	"GraphMD": {
+		"ObjectTypeString": "Graph",
+		"Vertices": 200,
+		"Edges": 5066,
+		"Density": 0.255
+	},
+	"ExecutionMD": {
+		"ExecutionTime": 10.002,
+		"SolutionType": "Approximate",
+		"Solution": 21,
+		"SolutionSet": "(4, 26, 32, 41, 46, 48, 83, 100, 103, 104, 107, 120, 122, 132, 137, 138, 144, 175, 180, 191, 199)",
+		"BabNodes": 737
+	}
+}
+
+
+PS:
+
+Read file <error.err> for stderr output of this job.
+

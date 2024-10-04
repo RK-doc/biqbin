@@ -1,0 +1,149 @@
+Sender: LSF System <lsfadmin@cn22>
+Subject: Job 35784: <mpirun -np 24 ./bab testni\ grafi/mac/rudy/pw01_100.0 testni\ grafi/mac/rudy/pw01_100.1 testni\ grafi/mac/rudy/pw01_100.2 testni\ grafi/mac/rudy/pw01_100.3 testni\ grafi/mac/rudy/pw01_100.4 testni\ grafi/mac/rudy/pw01_100.5 testni\ grafi/mac/rudy/pw01_100.6 testni\ grafi/mac/rudy/pw01_100.7 testni\ grafi/mac/rudy/pw01_100.8 testni\ grafi/mac/rudy/pw01_100.9> in cluster <hpcfs> Done
+
+Job <mpirun -np 24 ./bab testni\ grafi/mac/rudy/pw01_100.0 testni\ grafi/mac/rudy/pw01_100.1 testni\ grafi/mac/rudy/pw01_100.2 testni\ grafi/mac/rudy/pw01_100.3 testni\ grafi/mac/rudy/pw01_100.4 testni\ grafi/mac/rudy/pw01_100.5 testni\ grafi/mac/rudy/pw01_100.6 testni\ grafi/mac/rudy/pw01_100.7 testni\ grafi/mac/rudy/pw01_100.8 testni\ grafi/mac/rudy/pw01_100.9> was submitted from host <cn54> by user <avegikalamar> in cluster <hpcfs>.
+Job was executed on host(s) <12*cn22>, in queue <normal>, as user <avegikalamar> in cluster <hpcfs>.
+                            <12*cn10>
+</home/avegikalamar> was used as the home directory.
+</home/avegikalamar/BiqMac5> was used as the working directory.
+Started at Fri Sep  1 12:47:58 2017
+Results reported at Fri Sep  1 12:51:59 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpirun -np 24 ./bab testni\ grafi/mac/rudy/pw01_100.0 testni\ grafi/mac/rudy/pw01_100.1 testni\ grafi/mac/rudy/pw01_100.2 testni\ grafi/mac/rudy/pw01_100.3 testni\ grafi/mac/rudy/pw01_100.4 testni\ grafi/mac/rudy/pw01_100.5 testni\ grafi/mac/rudy/pw01_100.6 testni\ grafi/mac/rudy/pw01_100.7 testni\ grafi/mac/rudy/pw01_100.8 testni\ grafi/mac/rudy/pw01_100.9
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               5708.61 sec.
+    Max Memory :             164 MB
+    Average Memory :         110.33 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Processes :          13
+    Max Threads :            40
+
+The output (if any) follows:
+
+graf: testni grafi/mac/rudy/pw01_100.0
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2019.000000
+NAJBOLJSI PREREZ = 1 -1 -1 -1 1 -1 -1 -1 -1 -1 1 1 1 1 -1 1 -1 1 -1 -1 -1 1 -1 1 -1 -1 1 -1 -1 -1 1 -1 -1 1 -1 1 1 1 -1 -1 -1 -1 1 1 -1 -1 1 1 -1 1 -1 1 -1 -1 1 1 1 1 1 1 -1 -1 1 1 1 1 1 1 -1 1 -1 1 1 1 1 -1 -1 -1 1 1 -1 -1 1 1 -1 1 1 -1 1 -1 -1 -1 -1 -1 1 1 -1 -1 1 1 
+ENA STRAN PREREZA = 1 5 11 12 13 14 16 18 22 24 27 31 34 36 37 38 43 44 47 48 50 52 55 56 57 58 59 60 63 64 65 66 67 68 70 72 73 74 75 79 80 83 84 86 87 89 95 96 99 100 
+B&B vozlisc = 15
+Najvec zasedenih delavcev = 5
+Cas: 25.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.1
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2060.000000
+NAJBOLJSI PREREZ = 1 1 1 -1 -1 1 -1 -1 1 -1 -1 -1 -1 1 -1 1 -1 -1 -1 -1 -1 -1 1 -1 1 -1 1 1 -1 1 1 1 1 -1 -1 -1 -1 -1 -1 1 -1 -1 1 -1 -1 1 -1 1 -1 -1 1 1 -1 -1 1 1 1 1 1 -1 1 -1 1 -1 -1 1 1 1 1 1 -1 1 -1 -1 -1 1 -1 -1 -1 1 -1 -1 -1 -1 1 -1 1 -1 1 1 -1 1 -1 1 1 -1 1 1 1 -1 
+ENA STRAN PREREZA = 1 2 3 6 9 14 16 23 25 27 28 30 31 32 33 40 43 46 48 51 52 55 56 57 58 59 61 63 66 67 68 69 70 72 76 80 85 87 89 90 92 94 95 97 98 99 
+B&B vozlisc = 31
+Najvec zasedenih delavcev = 10
+Cas: 31.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.2
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2032.000000
+NAJBOLJSI PREREZ = -1 -1 1 1 1 -1 -1 -1 -1 -1 -1 -1 1 1 1 1 -1 1 -1 1 -1 1 -1 1 -1 -1 -1 1 1 -1 1 1 1 -1 -1 1 1 -1 -1 1 -1 1 -1 1 -1 -1 1 1 -1 -1 -1 -1 -1 1 1 1 -1 1 1 1 -1 -1 1 1 -1 1 -1 -1 -1 1 1 1 1 1 1 1 1 -1 -1 1 1 -1 1 -1 -1 1 -1 1 -1 -1 1 -1 -1 -1 -1 -1 1 1 -1 1 
+ENA STRAN PREREZA = 3 4 5 13 14 15 16 18 20 22 24 28 29 31 32 33 36 37 40 42 44 47 48 54 55 56 58 59 60 63 64 66 70 71 72 73 74 75 76 77 80 81 83 86 88 91 97 98 100 
+B&B vozlisc = 23
+Najvec zasedenih delavcev = 7
+Cas: 26.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.3
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2067.000000
+NAJBOLJSI PREREZ = -1 1 -1 -1 1 1 -1 -1 1 1 -1 -1 -1 1 -1 1 1 -1 1 -1 1 1 -1 -1 1 1 1 1 -1 -1 1 -1 -1 1 1 -1 -1 1 1 -1 -1 1 1 -1 -1 1 -1 1 -1 -1 -1 1 1 1 1 -1 1 -1 -1 1 -1 1 1 1 1 1 -1 -1 1 -1 1 -1 1 -1 1 1 -1 1 1 -1 1 -1 1 -1 -1 1 -1 1 -1 -1 -1 1 -1 -1 1 -1 -1 -1 -1 -1 
+ENA STRAN PREREZA = 2 5 6 9 10 14 16 17 19 21 22 25 26 27 28 31 34 35 38 39 42 43 46 48 52 53 54 55 57 60 62 63 64 65 66 69 71 73 75 76 78 79 81 83 86 88 92 95 
+B&B vozlisc = 49
+Najvec zasedenih delavcev = 15
+Cas: 31.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.4
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2039.000000
+NAJBOLJSI PREREZ = -1 -1 -1 1 1 1 1 1 -1 -1 1 -1 1 -1 -1 1 -1 1 -1 1 1 -1 1 -1 -1 1 1 -1 -1 1 1 1 1 1 1 -1 -1 1 1 -1 -1 1 -1 -1 -1 1 -1 1 1 -1 1 -1 1 1 1 -1 -1 -1 -1 -1 -1 1 1 -1 -1 -1 1 1 -1 -1 1 -1 -1 -1 1 1 -1 1 1 -1 1 -1 1 -1 -1 1 1 1 -1 1 -1 -1 1 1 -1 1 -1 1 -1 -1 
+ENA STRAN PREREZA = 4 5 6 7 8 11 13 16 18 20 21 23 26 27 30 31 32 33 34 35 38 39 42 46 48 49 51 53 54 55 62 63 67 68 71 75 76 78 79 81 83 86 87 88 90 93 94 96 98 
+B&B vozlisc = 3
+Najvec zasedenih delavcev = 1
+Cas: 13.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.5
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2108.000000
+NAJBOLJSI PREREZ = 1 -1 -1 1 1 -1 1 -1 -1 1 1 -1 1 1 1 1 1 -1 1 -1 -1 1 1 -1 1 1 -1 -1 1 -1 -1 -1 1 -1 -1 -1 -1 -1 1 1 1 -1 1 1 -1 -1 -1 -1 1 1 1 -1 -1 1 1 1 -1 1 -1 -1 1 -1 1 1 -1 -1 -1 -1 -1 -1 1 1 1 -1 1 1 1 1 -1 -1 -1 1 -1 1 -1 -1 -1 -1 -1 -1 1 1 1 -1 1 1 1 1 -1 1 
+ENA STRAN PREREZA = 1 4 5 7 10 11 13 14 15 16 17 19 22 23 25 26 29 33 39 40 41 43 44 49 50 51 54 55 56 58 61 63 64 71 72 73 75 76 77 78 82 84 91 92 93 95 96 97 98 100 
+B&B vozlisc = 5
+Najvec zasedenih delavcev = 1
+Cas: 15.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.6
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2032.000000
+NAJBOLJSI PREREZ = -1 1 -1 -1 -1 -1 1 -1 -1 1 1 -1 1 -1 1 1 1 1 1 1 1 -1 1 1 1 -1 -1 -1 1 -1 1 1 -1 -1 -1 -1 -1 1 1 -1 1 -1 -1 -1 -1 1 1 1 -1 1 -1 1 1 -1 1 -1 -1 -1 1 1 -1 1 1 1 1 -1 -1 1 1 -1 -1 -1 1 1 -1 1 -1 -1 -1 1 -1 1 1 -1 1 1 -1 1 -1 -1 -1 1 1 -1 -1 1 -1 -1 1 -1 
+ENA STRAN PREREZA = 2 7 10 11 13 15 16 17 18 19 20 21 23 24 25 29 31 32 38 39 41 46 47 48 50 52 53 55 59 60 62 63 64 65 68 69 73 74 76 80 82 83 85 86 88 92 93 96 99 
+B&B vozlisc = 25
+Najvec zasedenih delavcev = 7
+Cas: 30.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.7
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2074.000000
+NAJBOLJSI PREREZ = -1 1 -1 -1 1 1 -1 1 1 1 1 -1 1 1 1 -1 -1 1 1 1 1 1 -1 -1 -1 -1 1 1 1 1 1 -1 1 1 1 -1 1 1 -1 -1 1 1 1 -1 1 -1 -1 -1 -1 -1 -1 -1 1 1 1 -1 1 -1 -1 -1 -1 -1 1 -1 1 1 -1 1 -1 1 -1 1 -1 -1 -1 -1 -1 -1 1 1 -1 1 1 1 -1 -1 -1 1 1 1 -1 -1 1 1 1 -1 1 1 1 -1 
+ENA STRAN PREREZA = 2 5 6 8 9 10 11 13 14 15 18 19 20 21 22 27 28 29 30 31 33 34 35 37 38 41 42 43 45 53 54 55 57 63 65 66 68 70 72 79 80 82 83 84 88 89 90 93 94 95 97 98 99 
+B&B vozlisc = 29
+Najvec zasedenih delavcev = 11
+Cas: 28.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.8
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2022.000000
+NAJBOLJSI PREREZ = -1 1 -1 -1 1 -1 1 1 -1 1 -1 1 1 1 -1 -1 1 -1 1 1 1 1 1 1 -1 -1 1 1 1 -1 -1 1 -1 -1 -1 1 1 -1 -1 -1 -1 1 -1 -1 1 1 1 -1 1 -1 1 1 -1 1 -1 1 -1 1 -1 -1 1 1 -1 -1 1 1 1 -1 -1 -1 -1 -1 1 -1 -1 1 -1 1 1 1 1 -1 1 1 1 1 -1 1 -1 1 -1 -1 -1 1 1 -1 -1 -1 1 1 
+ENA STRAN PREREZA = 2 5 7 8 10 12 13 14 17 19 20 21 22 23 24 27 28 29 32 36 37 42 45 46 47 49 51 52 54 56 58 61 62 65 66 67 73 76 78 79 80 81 83 84 85 86 88 90 94 95 99 100 
+B&B vozlisc = 1
+Najvec zasedenih delavcev = 0
+Cas: 3.00 sec
+
+
+graf: testni grafi/mac/rudy/pw01_100.9
+The input graph has 100 nodes and 495 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 2005.000000
+NAJBOLJSI PREREZ = 1 1 1 1 1 -1 1 -1 -1 1 -1 -1 -1 1 1 -1 1 -1 1 -1 1 1 1 1 1 1 -1 -1 -1 1 -1 1 1 1 -1 -1 -1 -1 -1 -1 1 -1 -1 1 -1 -1 1 1 1 -1 -1 -1 1 -1 1 1 -1 -1 1 1 1 -1 -1 1 1 1 1 1 -1 -1 -1 -1 -1 1 -1 1 1 1 1 -1 1 -1 -1 1 -1 -1 -1 -1 1 -1 1 -1 -1 1 1 -1 -1 1 -1 1 
+ENA STRAN PREREZA = 1 2 3 4 5 7 10 14 15 17 19 21 22 23 24 25 26 30 32 33 34 41 44 47 48 49 53 55 56 59 60 61 64 65 66 67 68 74 76 77 78 79 81 84 89 91 94 95 98 100 
+B&B vozlisc = 97
+Najvec zasedenih delavcev = 22
+Cas: 36.00 sec
+
+
+
+
+PS:
+
+Read file <pw01_100_24.err> for stderr output of this job.
+

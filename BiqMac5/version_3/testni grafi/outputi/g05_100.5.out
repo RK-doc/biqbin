@@ -1,0 +1,48 @@
+Sender: LSF System <lsfadmin@cn22>
+Subject: Job 35651: <mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.5> in cluster <hpcfs> Done
+
+Job <mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.5> was submitted from host <cn54> by user <avegikalamar> in cluster <hpcfs>.
+Job was executed on host(s) <2*cn22>, in queue <normal>, as user <avegikalamar> in cluster <hpcfs>.
+</home/avegikalamar> was used as the home directory.
+</home/avegikalamar/BiqMac4> was used as the working directory.
+Started at Wed Aug 30 20:13:10 2017
+Results reported at Wed Aug 30 20:22:51 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpirun -np 2 ./bab testni\ grafi/mac/rudy/g05_100.5
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               1162.27 sec.
+    Max Memory :             53 MB
+    Average Memory :         50.23 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               1311 MB
+
+    Max Processes :          5
+    Max Threads :            14
+
+The output (if any) follows:
+
+The input graph has 100 nodes and 2475 edges, edge weights are integers.
+
+NAJBOLJSA VREDNOST = 1436.000000
+NAJBOLJSI PREREZ = -1 -1 1 -1 -1 1 1 -1 1 1 -1 -1 -1 1 1 -1 -1 1 1 -1 -1 1 -1 1 1 1 1 -1 -1 -1 1 1 -1 -1 -1 1 -1 1 -1 1 1 -1 1 1 1 -1 1 -1 1 -1 -1 1 -1 -1 1 -1 -1 1 1 1 1 -1 -1 1 1 -1 -1 -1 -1 -1 1 1 -1 -1 1 -1 -1 1 -1 1 -1 1 -1 -1 1 1 1 1 1 1 1 -1 1 -1 1 -1 1 -1 -1 1 
+ENA STRAN PREREZA = 3 6 7 9 10 14 15 18 19 22 24 25 26 27 31 32 36 38 40 41 43 44 45 47 49 52 55 58 59 60 61 64 65 71 72 75 78 80 82 85 86 87 88 89 90 91 93 95 97 100 
+
+B&B vozlisc = 165
+Najvec zasedenih delavcev = 0
+Cas: 581.00 sec
+
+
+PS:
+
+Read file <g05_100.5.err> for stderr output of this job.

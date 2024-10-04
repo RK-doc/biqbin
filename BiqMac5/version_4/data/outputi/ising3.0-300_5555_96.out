@@ -1,0 +1,57 @@
+Sender: LSF System <lsfadmin@cn46>
+Subject: Job 36161: <mpirun -np 96 ./bab testni\ grafi/mac/ising/ising3.0-300_5555> in cluster <hpcfs> Done
+
+Job <mpirun -np 96 ./bab testni\ grafi/mac/ising/ising3.0-300_5555> was submitted from host <prelog> by user <avegikalamar> in cluster <hpcfs>.
+Job was executed on host(s) <12*cn46>, in queue <normal>, as user <avegikalamar> in cluster <hpcfs>.
+                            <12*cn47>
+                            <12*cn48>
+                            <12*cn10>
+                            <12*cn11>
+                            <12*cn12>
+                            <12*cn18>
+                            <12*cn60>
+</home/avegikalamar> was used as the home directory.
+</home/avegikalamar/BiqMac5> was used as the working directory.
+Started at Wed Sep 13 20:22:20 2017
+Results reported at Wed Sep 13 20:40:48 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+mpirun -np 96 ./bab testni\ grafi/mac/ising/ising3.0-300_5555
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               106268.26 sec.
+    Max Memory :             743 MB
+    Average Memory :         586.64 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Processes :          91
+    Max Threads :            280
+
+The output (if any) follows:
+
+graph: testni grafi/mac/ising/ising3.0-300_5555
+The input graph has 300 nodes and 44850 edges, edge weights are integers.
+
+BEST VALUE = 8493173.000000
+BEST CUT = -1 -1 -1 1 1 -1 -1 -1 1 1 1 1 -1 1 1 1 -1 -1 -1 -1 1 1 1 1 -1 1 -1 1 -1 -1 1 -1 -1 -1 1 1 -1 1 1 -1 -1 -1 -1 1 -1 1 -1 1 1 -1 -1 1 1 1 1 1 -1 -1 -1 -1 1 1 1 1 -1 -1 -1 -1 -1 1 -1 1 1 1 -1 -1 1 -1 1 -1 1 1 1 1 1 -1 -1 -1 -1 1 -1 1 1 -1 1 1 -1 -1 1 1 1 1 1 1 -1 -1 -1 1 1 1 1 1 -1 -1 1 1 1 -1 -1 -1 -1 -1 1 -1 1 1 -1 1 1 1 1 1 -1 1 1 1 1 1 -1 1 -1 1 1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 1 1 1 -1 1 1 -1 1 -1 1 -1 -1 -1 1 -1 1 -1 -1 1 -1 -1 1 1 1 -1 -1 1 -1 -1 1 -1 1 -1 1 1 1 1 -1 -1 1 -1 1 -1 -1 -1 -1 1 -1 -1 -1 -1 1 1 -1 1 -1 1 1 -1 -1 1 1 1 1 -1 1 1 1 1 -1 -1 -1 1 -1 -1 1 -1 -1 1 -1 1 -1 -1 1 -1 -1 1 1 -1 1 1 -1 -1 -1 1 1 1 1 -1 1 -1 -1 -1 1 -1 1 -1 1 -1 1 -1 -1 1 -1 1 -1 -1 1 -1 1 1 1 1 1 -1 1 1 1 -1 1 1 1 -1 -1 -1 1 1 1 1 -1 -1 -1 1 1 -1 
+ONE SIDE OF CUT = 4 5 9 10 11 12 14 15 16 21 22 23 24 26 28 31 35 36 38 39 44 46 48 49 52 53 54 55 56 61 62 63 64 70 72 73 74 77 79 81 82 83 84 85 90 92 93 95 96 99 100 101 102 103 104 108 109 110 111 112 115 116 117 123 125 126 128 129 130 131 132 134 135 136 137 138 140 142 143 147 156 157 158 160 161 163 165 169 171 174 177 178 179 182 185 187 189 190 191 192 195 197 202 207 208 210 212 213 216 217 218 219 221 222 223 224 228 231 234 236 239 242 243 245 246 250 251 252 253 255 259 261 263 265 268 270 273 275 276 277 278 279 281 282 283 285 286 287 291 292 293 294 298 299 
+B&B nodes = 71
+maxQueueSize = 2
+maxWorkers = 26
+TIME: 1108.00 sec
+
+
+
+
+PS:
+
+Read file <ising3.0-300_5555_96.err> for stderr output of this job.
+

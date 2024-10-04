@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --partition=rome --mem=0
+#SBATCH --nodes=3
+#SBATCH --job-name=biqbin_hrgat
+#SBATCH --output=output_file.txt
+#SBATCH --error=error_file.txt
+
+unset LD_PRELOAD
+source setupenv.sh
+
+mpirun biqbin Instances/rudy/g05_100.0 params

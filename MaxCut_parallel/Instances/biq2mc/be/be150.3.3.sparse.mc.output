@@ -1,0 +1,35 @@
+Input file: Instances/biq2mc/be/be150.3.3.sparse.mc
+
+Graph has 151 vertices and 3400 edges.
+BiqBin parameters:
+    init_bundle_iter = 3
+     max_bundle_iter = 15
+          triag_iter = 5
+           pent_iter = 5
+           hept_iter = 5
+      max_outer_iter = 20
+          extra_iter = 10
+    violated_TriIneq = 0.001000
+             TriIneq = 1510
+      adjust_TriIneq = 1
+            PentIneq = 5000
+           HeptaIneq = 5000
+         Pent_Trials = 60
+        Hepta_Trials = 50
+        include_Pent = 1
+       include_Hepta = 1
+                root = 0
+            use_diff = 1
+          time_limit = 0
+   branchingStrategy = 1
+
+Time(master) before sending jobs to workers: 14.95
+
+Nodes = 1
+Root node bound = 17314.615
+Maximum value = 17314
+Solution = ( 1 5 6 8 12 19 21 22 27 29 31 36 37 39 40 42 45 48 49 50 53 56 57 58 61 62 63 65 66 69 72 74 75 76 77 92 96 97 98 102 103 104 107 108 109 110 114 118 124 126 127 129 131 133 138 139 141 142 149 )
+Time = 14.95 s
+
+Number of cores: 24
+Maximum number of workers used: 0

@@ -1,0 +1,1 @@
+mpirun -n 24 biqbin Instances/rudy/g05_100.0 params

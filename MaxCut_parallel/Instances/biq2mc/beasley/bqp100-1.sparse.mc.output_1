@@ -1,0 +1,33 @@
+Input file: Instances/biq2mc/beasley/bqp100-1.sparse.mc
+
+Graph has 101 vertices and 563 edges.
+BiqBin parameters:
+    init_bundle_iter = 3
+     max_bundle_iter = 15
+          triag_iter = 5
+           pent_iter = 5
+           hept_iter = 5
+      max_outer_iter = 20
+          extra_iter = 10
+    violated_TriIneq = 0.001000
+             TriIneq = 1010
+      adjust_TriIneq = 1
+            PentIneq = 5000
+           HeptaIneq = 5000
+         Pent_Trials = 60
+        Hepta_Trials = 50
+        include_Pent = 1
+       include_Hepta = 1
+                root = 0
+            use_diff = 1
+          time_limit = 0
+   branchingStrategy = 1
+
+Nodes = 1
+Root node bound = 7970.76
+Maximum value = 7970
+Solution = ( 1 2 5 10 16 18 21 23 24 35 36 38 40 41 42 43 44 48 51 53 60 61 62 64 65 67 68 70 73 74 75 76 79 81 84 86 87 89 90 91 92 97 99 100 )
+Time = 1.42 s
+
+Number of cores: 288
+Maximum number of workers used: 0

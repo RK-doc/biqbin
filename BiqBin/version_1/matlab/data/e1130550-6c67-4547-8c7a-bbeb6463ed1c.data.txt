@@ -1,6 +1,0 @@
-feasible
-1
-offset
-192.000000
-upp
-48.000000
